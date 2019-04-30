@@ -1,5 +1,5 @@
 // Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
-@import "variables";
+@import "common/variables";
 
 // Подключение нужных SCSS исходников Bootstrap 4
 @import "../../../node_modules/bootstrap/scss/_functions";
@@ -41,4 +41,5 @@
 @import "../../../node_modules/bootstrap/scss/_print";
 
 // Подключение своих SCSS файлов
-@import "my";
+@import "common/fonts";
+@import "components/style";
