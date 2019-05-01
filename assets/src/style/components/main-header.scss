@@ -1,5 +1,6 @@
 .main-header {
   position: relative;
+  margin-bottom: 100px;
   background-image: url("/img/header/bg_heder.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,15 +12,14 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-image: linear-gradient(#485563, #29323c);
+    background-image: linear-gradient(#485563, $dark-grey);
     opacity: 0.75;
   }
-  margin-bottom: 500px; // dev only
 }
 
 .main-header__top {
   padding-top: 28px;
-  padding-bottom: 208px;
+  padding-bottom: 86px;
 }
 
 .dropdown {
@@ -33,7 +33,7 @@
   background-size: 22px;
   background-repeat: no-repeat;
   background-position: center right;
-  color: #e8e8e8;
+  color: $white;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1;
@@ -51,7 +51,7 @@
   font-family: 'Montserrat bold', "Arial", "Helvetica", sans-serif;
   font-size: 36px;
   line-height: 40px;
-  color: #e8e8e8;
+  color: $white;
   z-index: 1;
 }
 
@@ -61,7 +61,7 @@
   font-family: "OpenSans light", "Arial", "Helvetica", sans-serif;
   font-size: 17px;
   line-height: 25px;
-  color: #e8e8e8;
+  color: $white;
   text-align: center;
 }
 
@@ -73,10 +73,10 @@
   font-size: 13px;
   font-weight: 800;
   line-height: 36px;
-  color: #e8e8e8;
+  color: $white;
   text-transform: uppercase;
   text-align: center;
-  border: 1px solid #e8e8e8;
+  border: 1px solid $white;
   border-radius: 40px;
   z-index: 1;
 
@@ -86,7 +86,6 @@
   &:active {
     color: #dddddd;
   }
-
 }
 
 .arrow-bottom {
@@ -94,7 +93,7 @@
   margin-bottom: 103px;
   width: 50px;
   height: 50px;
-  border: 1px solid #e8e8e8;
+  border: 1px solid $white;
   border-radius: 50%;
 
   &::before {
@@ -106,8 +105,8 @@
     left: 50%;
     margin-left: -9px;
     margin-top: -13px;
-    border-bottom: 3px solid #e8e8e8;
-    border-right: 3px solid #e8e8e8;
+    border-bottom: 3px solid rgba(187, 189, 191, 0.7);
+    border-right: 3px solid rgba(187, 189, 191, 0.7);
     transform: rotate(45deg);
   }
 
@@ -119,6 +118,6 @@
     top: 0;
     left: 50%;
     margin-top: 50px;
-    background-color: #e8e8e8;
+    background-color: rgba(187, 189, 191, 0.7);
   }
 }

@@ -1,0 +1,95 @@
+.services {
+  padding-bottom: 70px;
+}
+
+.services__headline {
+  margin-bottom: 0;
+  font: inherit;
+  font-size: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: $dark-grey;
+  text-align: center;
+}
+
+.services__description {
+  position: relative;
+  font: inherit;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-grey;
+  opacity: 0.8;
+  text-align: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 2px;
+    background-color: $dark-grey;
+  }
+}
+
+.services__item {
+  padding: 0 20px;
+  padding-top: 200px;
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -60px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &:before {
+    background-image: radial-gradient(#475462, $dark-grey);
+  }
+
+  &::after {
+    background-image: url("/img/services/services-sprite.png");
+    background-repeat: no-repeat;
+    background-position: 33px 31px;
+  }
+}
+
+.services__item:nth-child(2) {
+  &::after {
+    background-position: -112px 31px;
+  }
+}
+
+.services__item:nth-child(3) {
+  &::after {
+    background-position: -279px 31px;
+  }
+}
+
+.services__item:nth-child(4) {
+  &::after {
+    background-position: -454px 34px;
+  }
+}
+
+.services__title {
+  text-align: center;
+
+  @include title-font();
+}
+
+.services__text {
+  font: inherit;
+  color: $dark-grey;
+  text-align: center;
+  opacity: 0.8;
+}

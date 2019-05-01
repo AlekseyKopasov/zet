@@ -34,6 +34,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'OpenSans Extrabold';
+  font-display: swap;
+  src: url('fonts/opensans-extrabold.woff2') format('woff2'),
+        url('fonts/opensans-extrabold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 //--------------------------------------------------
 
 
@@ -79,15 +88,6 @@
   font-display: swap;
   src: url('fonts/opensans-bold.woff2') format('woff2'),
         url('fonts/opensans-bold.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sans_extraboldregular';
-  font-display: swap;
-  src: url('fonts/opensans-extrabold.woff2') format('woff2'),
-        url('fonts/opensans-extrabold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

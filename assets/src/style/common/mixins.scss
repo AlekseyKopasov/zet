@@ -4,3 +4,12 @@
   line-height: 1;
   font-weight: 400;
 }
+
+@mixin title-font {
+  font-family: 'Montserrat bold', "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $dark-grey;
+}
