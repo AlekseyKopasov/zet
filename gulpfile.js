@@ -192,7 +192,4 @@ gulp.task('watch', () => {
 });
 
 // задача по умолчанию
-gulp.task('default', gulp.series(
-  'build',
-  gulp.parallel('webserver', 'watch')
-));
+gulp.task('default', gulp.series('build', gulp.parallel('webserver', 'watch')));

@@ -3,11 +3,12 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="description" content="">
 
-  <link rel="preload" href="fonts/GothamRounded-Medium.woff2" as="font"
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font"
     type="font/woff2" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/style.min.css">
@@ -18,7 +19,51 @@
 
 <body>
 
-  <header class="main-header"></header>
+  <header class="main-header container-fluid">
+    <div class="container main-header__top">
+      <div class="row justify-content-between">
+        <div class="col-2">
+          <a href="#" class="main-header__logo">
+            <img src="img/header/icon_logo.png" alt="Zet" width="84" height="30">
+          </a>
+        </div>
+        <div class="col-2 ml-auto nav-wrapper">
+          <div class="dropdown">
+            <button class="btn btn-menu" type="button" id="dropdownMenu"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              data-boundary="viewport">
+              Menu
+            </button>
+            <div class="dropdown-menu dropdown-menu-right"
+              aria-labelledby="dropdownMenu">
+              <button class="dropdown-item" type="button">Item 1</button>
+              <button class="dropdown-item" type="button">Item 2</button>
+              <button class="dropdown-item" type="button">Item 3</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <h1 class="main-header__headline">Something Nothing</h1>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-7">
+          <p class="main-header-description">Enean vulputate eleifend tellus.
+            Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim
+            iam ultricies nisi eleifend tellus.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <button class="btn btn-more" type="button">Let's talk</button>
+      </div>
+      <div class="row justify-content-center">
+        <button class="btn arrow-bottom" type="button" aria-label="Scroll down"></button>
+      </div>
+    </div>
+
+  </header>
 
   <main class="main-content"></main>
 
