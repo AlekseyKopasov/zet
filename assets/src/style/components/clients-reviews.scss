@@ -1,0 +1,68 @@
+.clients-reviews {
+  padding-bottom: 100px;
+}
+
+.clients__review {
+  padding: 0 15px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.clients__mark {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+  @include title-font();
+
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.clients__info {
+  text-align: center;
+}
+
+.clients__img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+
+.clients__name {
+  margin-bottom: 5px;
+
+  @include title-font();
+
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.clients__job {
+@include motserrat-regular();
+
+opacity: 0.8;
+}
+
+.clients__slider-indicator {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border: 1px solid $dark-grey;
+  border-radius: 50%;
+  opacity: 0.8;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.clients__slider-indicator--active {
+  background-color: $dark-grey;
+}

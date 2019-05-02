@@ -13,3 +13,11 @@
   text-transform: uppercase;
   color: $dark-grey;
 }
+
+@mixin motserrat-regular {
+  font-family: 'Montserrat bold', "Arial", "Helvetica", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  color: $dark-grey;
+}
