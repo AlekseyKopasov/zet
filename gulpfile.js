@@ -57,7 +57,7 @@ const postcss = require('gulp-postcss');
 const webp = require('gulp-webp');
 const postHtml = require('gulp-posthtml');
 const include = require('posthtml-include');
-const w3cjs = require('gulp-w3cjs');
+// const w3cjs = require('gulp-w3cjs');
 const babel = require('gulp-babel');
 
 /* задачи */
@@ -69,7 +69,7 @@ gulp.task('webserver', () => webserver(config));
 gulp.task('html:build', () => {
   return gulp.src(path.src.html) // выбор всех html файлов по указанному пути
     .pipe(plumber()) // отслеживание ошибок
-    .pipe(w3cjs())
+    // .pipe(w3cjs()) error
     .pipe(rigger())
     .pipe(gulp.dest(path.build.html)) // выкладывание готовых файлов
     .pipe(webserver.reload({ stream: true })); // перезагрузка сервера
