@@ -1,0 +1,31 @@
+.producers {
+  margin-bottom: 125px;
+  background-color: $grey;
+}
+
+.producers__item {
+  width: 170px;
+  min-height: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.producers__item--coca-cola {
+  background-image: url("/img/producers/producer-1.png");
+}
+
+.producers__item--dropbox {
+  background-image: url("/img/producers/producer-2.png");
+}
+
+.producers__item--intel {
+  background-image: url("/img/producers/producer-3.png");
+}
+
+.producers__item--zendesk {
+  background-image: url("/img/producers/producer-4.png");
+}
+
+.producers__item--nokia {
+  background-image: url("/img/producers/producer-5.png");
+}
