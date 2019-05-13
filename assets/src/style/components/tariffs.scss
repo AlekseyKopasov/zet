@@ -1,0 +1,108 @@
+.tariffs {
+  margin-bottom: 135px;
+}
+
+.section-description--tariffs {
+  margin-bottom: 116px;
+}
+
+.tariff__table {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  border: 1px solid rgba(221, 221, 221, 0.5);
+
+  &:nth-child(1) {
+    border-right: none;
+  }
+
+  &:nth-child(3) {
+    border-left: none;
+  }
+
+  &:nth-child(2) {
+    border-top: none;
+  }
+
+  &:nth-child(2)::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 40px;
+    top: -40px;
+    left: 0;
+    border-top: 5px solid #485563;
+    box-shadow: -1px 0px 0px 0px rgba(221, 221, 221, 0.5), 1px 0px 0px 0px rgba(221, 221, 221, 0.5);
+  }
+}
+
+.tariff__table--head {
+  display: flex;
+  flex-direction: column;
+}
+
+.tariff__table-content {
+  border-top: 1px solid rgba(221, 221, 221, 0.5);
+}
+
+.tariff__table--head-title,
+.tariff__table--head-price {
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #485563;
+  text-align: center;
+}
+
+.tariff__table--head-title {
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+
+.tariff__table--head-price {
+  margin-bottom: 5px;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.tariff__table--head-info,
+.tariff__table-content {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  color: #29323c;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.tariff__table--head-info {
+  margin-bottom: 20px;
+}
+
+.tariff__table-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 40px;
+  font-weight: 600;
+  text-transform: none;
+  opacity: 1;
+}
+
+.btn-tariff {
+  width: 125px;
+  padding: 16px;
+  margin-top: auto;
+  margin-bottom: 35px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+  font-size: 13px;
+  color: $white;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  background-color: #485563;
+  border-radius: 25px;
+}
