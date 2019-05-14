@@ -41,6 +41,11 @@
 .tariff__table--head {
   display: flex;
   flex-direction: column;
+  color: #485563;
+}
+
+.tariff__table--head-center {
+  color: #29323c;
 }
 
 .tariff__table-content {
@@ -52,7 +57,6 @@
   font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   font-size: 20px;
   font-weight: bold;
-  color: #485563;
   text-align: center;
 }
 
@@ -86,10 +90,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 40px;
   font-weight: 600;
   text-transform: none;
   opacity: 1;
+}
+
+.tariff__descr {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  padding: 66px 75px 47px 75px;
+  text-align: center;
 }
 
 .btn-tariff {
@@ -105,4 +116,9 @@
   text-align: center;
   background-color: #485563;
   border-radius: 25px;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+  }
 }
